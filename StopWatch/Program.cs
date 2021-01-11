@@ -7,7 +7,9 @@ namespace StopWatch
         static void Main(string[] args)
         {
             Console.WriteLine("Type Stopwatch or Exit...\n1. Stopwatch\n2. Exit");
+            
             var choice = Console.ReadLine();
+            
             Console.Clear();
 
             if (choice == "Stopwatch")
@@ -27,6 +29,7 @@ namespace StopWatch
         private static void StopWatch()
         {
             var stopWatch = new Stopwatch();
+            
             Console.WriteLine("Choose and type: start or stop the stopwatch");
 
             while (true)
